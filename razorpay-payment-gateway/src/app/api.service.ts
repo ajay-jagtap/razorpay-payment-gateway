@@ -14,7 +14,7 @@ export class ApiService {
       let headers = new HttpHeaders({ "ContentType": "application/JSON" });
       headers.append('Access-Control-Allow-Origin', 'true');
 
-      return this.http.post(`${environment.apiUrl}razorpay/razorPayOrder`, options, { headers });
+      return this.http.post(`${environment.apiUrl}/razorPayOrder`, options, { headers });
     } catch (error) {
       console.log(error);
     }
